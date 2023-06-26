@@ -33,7 +33,7 @@
 
         <p>Découvrez des restaurants d’exception, sélectionnés par nos soins.</p>
 
-        <button class="pink__button">Explorer nos restaurants</button>
+        <a href="#ancre-btn" class="pink__button">Explorer nos restaurants</a>
     </nav>
 
 
@@ -46,52 +46,118 @@
 
             <div class="fonctionnement-contenant">
 
-                    <div class="cerle-fonctionnement">1</div>
-                    <article class="celule-fonctionnement">
-                        <i class="fa-solid fa-mobile-screen-button icone-color-2"></i>
-                        <div class="text-width"><p class="text-margin">Choisissez un restaurant</p></div>
-                    </article>
-                
-                
-                    <div class="cerle-fonctionnement">2</div>
-                    <article class="celule-fonctionnement">
-                        <i class="fa-solid fa-list-ul icone-fonctionnement icone-color-2"></i>
-                        <div class="text-width"><p class="text-margin">Composez votre menu</p></div>
-                    </article>
-                
+                <div class="cerle-fonctionnement">1</div>
+                <article class="celule-fonctionnement">
+                    <i class="fa-solid fa-mobile-screen-button icone-color-2"></i>
+                    <div class="text-width">
+                        <p class="text-margin">Choisissez un restaurant</p>
+                    </div>
+                </article>
 
-                    <div class="cerle-fonctionnement">3</div>
-                    <article class="celule-fonctionnement">
-                        <i class="fa-solid fa-store icone-fonctionnement icone-color-1"></i>
-                        <div class="text-width"><p class="text-margin">Dégustez au restaurant</p></div>
-                    </article>
-            
+
+                <div class="cerle-fonctionnement">2</div>
+                <article class="celule-fonctionnement">
+                    <i class="fa-solid fa-list-ul icone-fonctionnement icone-color-2"></i>
+                    <div class="text-width">
+                        <p class="text-margin">Composez votre menu</p>
+                    </div>
+                </article>
+
+
+                <div class="cerle-fonctionnement">3</div>
+                <article class="celule-fonctionnement">
+                    <i class="fa-solid fa-store icone-fonctionnement icone-color-1"></i>
+                    <div class="text-width">
+                        <p class="text-margin">Dégustez au restaurant</p>
+                    </div>
+                </article>
+
             </div>
 
         </section>
         <section class="restaurants">
-
+            <span id="ancre-btn"></span>
             <h2 class="titre-h2">Restaurants</h2>
 
-            <article class="card">    
-                <img class="image-card" src="Images et textes Ohmyfood/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="">
-                <p class="nouveau">Nouveau</p>
-                <div>
-                    <h3>La palette du goût</h3>
-                    <p>Ménilmontant</p>
-                </div>
-                <div class="coeur"></div>
-            </article>
-    
+            <div class="four-cards">
+
+                <article class="card">
+                    <img class="image-card"
+                        src="Images et textes Ohmyfood/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg"
+                        alt="">
+                    <p class="card-nouveau">Nouveau</p>
+                    <div class="text-heart">
+                        <div class="card-text">
+                            <h3>La palette du goût</h3>
+                            <p>Ménilmontant</p>
+                        </div>
+                        <div class="heart"><i class="fa-regular fa-heart heart-1"></i><i class="fa-solid fa-heart heart-2"></i></div>
+                    </div>
+                </article>
+
+                <article class="card">
+                    <img class="image-card"
+                        src="Images et textes Ohmyfood/images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg" alt="">
+                    <p class="card-nouveau">Nouveau</p>
+                    <div class="text-heart">
+                        <div class="card-text">
+                            <h3>La note enchantée</h3>
+                            <p>Charonne</p>
+                        </div>
+                        <div class="heart"><i class="fa-regular fa-heart heart-1"></i><i class="fa-solid fa-heart heart-2"></i></div>
+                    </div>
+                </article>
+
+
+                <article class="card">
+                    <img class="image-card"
+                        src="Images et textes Ohmyfood/images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg" alt="">
+                    <div class="text-heart">
+                        <div class="card-text">
+                            <h3>À la française</h3>
+                            <p>Cité Rouge</p>
+                        </div>
+                        <div class="heart"><i class="fa-regular fa-heart heart-1"></i><i class="fa-solid fa-heart heart-2"></i></div>
+                    </div>
+                </article>
+
+
+                <article class="card">
+                    <img class="image-card"
+                        src="Images et textes Ohmyfood/images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg"
+                        alt="">
+                    <div class="text-heart">
+                        <div class="card-text">
+                            <h3>Le délice des sens</h3>
+                            <p>Folie-Méricourt</p>
+                        </div>
+                        <div class="heart"><i class="fa-regular fa-heart heart-1"></i><i class="fa-solid fa-heart heart-2"></i></div>
+                    </div>
+                </article>
+            </div>
 
         </section>
-        
-
-
 
     </main>
 
     <footer>
+
+        <h4>ohmyfood</h4>
+
+        <div class="footer-content">
+            <div class="icone-footer"><i class="fa-solid fa-utensils icone-padding"></i>
+                <p>Proposer un restaurant</p>
+            </div>
+            <div class="icone-footer"><i class="fa-solid fa-handshake-angle icone-padding"></i>
+                <p>Devenir partenaire</p>
+            </div>
+            <div class="icone-footer">
+                <p>Mentions légales</p>
+            </div>
+            <div class="icone-footer">
+                <p>Contact</p>
+            </div>
+        </div>
     </footer>
 </body>
 
