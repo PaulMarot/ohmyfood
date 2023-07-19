@@ -136,6 +136,7 @@ body {
     cursor: pointer;
     position: relative;
     transition: 1s;
+
     &:hover {
         .card-content{
         width: calc(100% - 100px);

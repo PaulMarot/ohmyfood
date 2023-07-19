@@ -292,6 +292,9 @@ footer p {
 }
 
 /*** loader ***/
+
+
+
 .loader {
   position: fixed;
   top: 0;
@@ -313,13 +316,17 @@ footer p {
   animation-duration: 4s;
   animation-iteration-count: 1;
   -webkit-animation-fill-mode: forwards;
+
+
+
+  .timer-6 {
+    animation: loader-opacity 2.8s forwards;
+  }
+  .timer-2 {
+    animation: loader-opacity 2.8s forwards;
+  }
 }
-.loader .timer-6 {
-  animation: loader-opacity 2.8s forwards;
-}
-.loader .timer-2 {
-  animation: loader-opacity 2.8s forwards;
-}
+
 
 @keyframes loader-opacity {
   99% {
@@ -330,17 +337,29 @@ footer p {
     z-index: -1;
   }
 }
+
+@for $i from 1 through 8 {
+  
+} 
+
+
 @media (min-width: 1500px) {
+
+
   /*** fonctionnement ***/
+
+
   .fonctionnement h2 {
     padding-left: 3%;
   }
+
   .fonctionnement-contenant {
     display: flex;
     flex-direction: row;
     justify-content: center;
     padding-top: 40px;
   }
+
   .celule-fonctionnement {
     height: 120px;
     width: 30%;
@@ -353,14 +372,17 @@ footer p {
     font-size: 32px;
     text-align: center;
   }
+
   .text-width {
     font-size: 25px;
     margin: -50px;
   }
+
   .cerle-fonctionnement {
     top: 37px;
     right: -32px;
   }
+
   /*** restaurants ***/
   .four-cards {
     display: flex;
@@ -368,9 +390,11 @@ footer p {
     flex-wrap: wrap;
     justify-content: center;
   }
+
   .restaurants h2 {
     padding-left: 9%;
   }
+
   .card {
     background-color: white;
     display: flex;
@@ -381,12 +405,14 @@ footer p {
     position: relative;
     gap: 15px;
   }
+
   /*** footer ***/
   footer {
     display: flex;
     flex-direction: row;
     flex-direction: row-reverse;
   }
+
   h4 {
     font-family: "Shrikhand", cursive;
     font-size: 34px;
@@ -395,22 +421,27 @@ footer p {
     margin: 0;
     margin-left: 60px;
   }
+
   .footer-content {
     display: flex;
     flex-direction: row;
     gap: 30px;
   }
+
   .icone-footer {
     display: flex;
     align-items: center;
   }
+
   footer p {
     padding-left: 0;
     font-size: 30px;
     font-weight: 300;
   }
+
   .icone-padding {
     padding-right: 10px;
   }
 }
+
 /*# sourceMappingURL=style.css.map */
