@@ -14,25 +14,22 @@ h1 {
 
 header {
   display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+}
+
+.nothing {
+  background-color: #fff;
 }
 
 .fleche-retour {
   color: black;
-  align-self: center;
-  margin-right: auto;
   font-size: 30px;
-  padding-top: 30px;
   padding-left: 20px;
 }
 
-.logo {
-  align-self: center;
-  margin-right: auto;
-  padding-bottom: 20px;
-  height: 120px;
-  color: #101010;
-  padding-right: 30px;
-}
+
 
 
 /****  nav (Photo)  ****/
@@ -83,6 +80,7 @@ h2 {
   font-size: 30px;
   padding-top: 20px;
   padding-left: 60px;
+  cursor: pointer;
 }
 
 
@@ -143,15 +141,16 @@ h3 {
   cursor: pointer;
   position: relative;
   transition: 1s;
-}
 
-:hover.card .card-content {
-  width: calc(100% - 70px);
-}
+  &:hover {
+    .card-content {
+      width: calc(100% - 100px);
+    }
 
-
-:hover.card .green-card {
-  right: 0;
+    .green-card {
+      right: 0;
+    }
+  }
 }
 
 .green-card {
@@ -168,12 +167,13 @@ h3 {
   transition: 0.5s;
 }
 
+
 .card-content {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  transition: 1s;
+  transition: 0.5s;
 }
 
 .card-content .price {
@@ -277,119 +277,6 @@ footer p {
 .icone-padding {
   padding-right: 10px;
 }
-
-
-
- .loader {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100vw;
-  height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background: #333333;
-  opacity: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: white;
-  opacity: 0;
-  font-family: "Shrikhand", cursive;
-  font-size: 100px;
-transition: opacity 3.6s ease-in;
--moz-transition: opacity 3.6s ease-in;
--webkit-transition: opacity 3.6s ease-in;
--o-transition: opacity 3.6s ease-in;<
-}
-
-
-.loader .timer-1 {
-opacity: 0;
-transition: opacity 1s ease-in;
--moz-transition: opacity 1s ease-in;
--webkit-transition: opacity 1s ease-in;
--o-transition: opacity 1s ease-in;
-}
-
-.loader .timer-2 {
-  opacity: 0;
-  transition: opacity 2.8s ease-in;
-  -moz-transition: opacity 2.8s ease-in;
-  -webkit-transition: opacity 2.8s ease-in;
-  -o-transition: opacity 2.8s ease-in;
-}
-
-.loader .timer-3 {
-  opacity: 0;
-  transition: opacity 2.5s ease-in;
-  -moz-transition: opacity 2.5s ease-in;
-  -webkit-transition: opacity 2.5s ease-in;
-  -o-transition: opacity 2.5s ease-in;
-}
-
-.loader .timer-4 {
-  opacity: 0;
-  transition: opacity 1.5s ease-in;
-  -moz-transition: opacity 1.5s ease-in;
-  -webkit-transition: opacity 1.5s ease-in;
-  -o-transition: opacity 1.5s ease-in;
-}
-
-.loader .timer-5 {
-  opacity: 0;
-transition: opacity 0.5s ease-in;
--moz-transition: opacity 0.5s ease-in;
--webkit-transition: opacity 0.5s ease-in;
--o-transition: opacity 0.5s ease-in;
-}
-
-.loader .timer-6 {
-  opacity: 0;
-  transition: opacity 3s ease-in;
-  -moz-transition: opacity 3s ease-in;
-  -webkit-transition: opacity 3s ease-in;
-  -o-transition: opacity 3s ease-in;
-}
-
-.loader .timer-7 {
-  opacity: 0;
-  transition: opacity 3.3s ease-in;
-  -moz-transition: opacity 3.3s ease-in;
-  -webkit-transition: opacity 3.3s ease-in;
-  -o-transition: opacity 3.3s ease-in;
-}
-
-.mimi {
-  display: flex;
-justify-content: center;
-margin-bottom: 80px;
-}
-
-.btn {
-  border: 5px solid #ec9baf;
-  background-color: #99E2D0;
-  height: 80px;
-  width: 400px;
-  border-radius: 30px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 45px;
-  color: #fff;
-  transition:  400ms;
-  cursor: pointer;
-}
-
-:hover.btn {
-transform: scale(1.11);
-background-color: #9356dc;
-border: 5px solid #99E2D0;
-color: #99E2D0;
-}
-
-
 
 @media (min-width: 1500px) {
 

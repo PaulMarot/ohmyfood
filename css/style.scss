@@ -163,6 +163,11 @@ nav p {
   margin-right: 30px;
 }
 
+a {
+  color: black;
+  text-decoration: none;
+}
+
 .card {
   background-color: white;
   display: flex;
@@ -172,6 +177,7 @@ nav p {
   height: 480px;
   position: relative;
   gap: 15px;
+  cursor: pointer;
 }
 
 .image-card {
@@ -293,8 +299,6 @@ footer p {
 
 /*** loader ***/
 
-
-
 .loader {
   position: fixed;
   top: 0;
@@ -311,36 +315,60 @@ footer p {
   align-items: center;
   color: white;
   font-family: "Shrikhand", cursive;
-  font-size: 100px;
+  font-size: 70px;
   animation-name: loader-opacity;
-  animation-duration: 4s;
+  animation-duration: 8s;
   animation-iteration-count: 1;
   -webkit-animation-fill-mode: forwards;
-
-
-
-  .timer-6 {
-    animation: loader-opacity 2.8s forwards;
-  }
-  .timer-2 {
-    animation: loader-opacity 2.8s forwards;
-  }
 }
 
+.loader .timer-1 {
+  animation: loader-opacity 3s forwards;
+}
+
+.loader .timer-2 {
+  animation: loader-opacity 4.8s forwards;
+}
+
+.loader .timer-3 {
+  animation: loader-opacity 4.5s forwards;
+}
+
+.loader .timer-4 {
+  animation: loader-opacity 3.5s forwards;
+}
+
+.loader .timer-5 {
+  animation: loader-opacity 2.5s forwards;
+}
+
+.loader .timer-6 {
+  animation: loader-opacity 5s forwards;
+}
+
+.loader .timer-7 {
+  animation: loader-opacity 5.3s forwards;
+}
+
+.loader .timer-8 {
+  animation: loader-opacity 5.5s forwards;
+}
 
 @keyframes loader-opacity {
+  50% {
+    opacity: 100%;
+  }
+
   99% {
     z-index: 1;
   }
+
   100% {
     opacity: 0%;
     z-index: -1;
   }
 }
 
-@for $i from 1 through 8 {
-  
-} 
 
 
 @media (min-width: 1500px) {
@@ -441,6 +469,10 @@ footer p {
 
   .icone-padding {
     padding-right: 10px;
+  }
+
+  .loader {
+    font-size: 200px;
   }
 }
 
