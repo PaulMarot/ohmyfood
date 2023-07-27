@@ -48,6 +48,7 @@ main {
   padding-right: 30px;
   border-radius: 60px 60px 0px 0px;
   margin-top: -120px;
+  overflow: hidden;
 }
 
 
@@ -174,10 +175,15 @@ h3 {
   justify-content: space-between;
   align-items: center;
   transition: 0.5s;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .card-content .price {
   margin-right: 50px;
+  font-weight: 500;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 
@@ -187,19 +193,18 @@ h3 {
 }
 
 h4 {
-  font-size: 28px;
+  font-size: 22px;
   margin: 0;
+  margin-top: 10px;
 }
 
 
 .card-content p {
-  font-size: 26px;
+  font-size: 20px;
   margin-top: 10px;
-}
-
-.card-text {
   font-weight: 300;
 }
+
 
 .pice {
   font-weight: 500;
@@ -278,6 +283,29 @@ footer p {
   padding-right: 10px;
 }
 
+
+section {
+  transform: translate(-1100px , 0px, );
+  animation-name: translation;
+  animation-duration: 1s;
+  animation-iteration-count: 1;
+  -webkit-animation-fill-mode: forwards;
+}
+
+
+@keyframes translation {
+  0% {
+    width: 0px;
+    transform: translate(-1100px , 0px, );
+  }
+
+  100% {
+    width: 100%;
+    transform: translate( 0px , 0px, );
+  }
+}
+
+
 @media (min-width: 1500px) {
 
 
@@ -290,10 +318,20 @@ footer p {
     margin-left: 200px;
     margin-right: 200px;
     margin-top: -70px;
+    
   }
 
 
   /*** menu ***/
+
+  h4 {
+    font-size: 28px;
+    margin: 0;
+  }
+
+  .card-content p {
+    font-size: 26px;
+  }
 
   .titre-h2 {
     display: flex;
